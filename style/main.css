@@ -830,6 +830,30 @@ hr {
     @media screen and (max-width: 480px) {
       .tile.tile-4096 {
         font-size: 15px; } }
+ .tile.tile-70368744177664 .tile-inner {
+    color: #f9f6f2;
+    background: rgb(70 35 0 / 1);
+    box-shadow: 0 0 30px 10px rgba(70, 35, 0, 0.77778), inset 0 0 0 1px rgba(255, 255, 255, 0.33333);
+    font-size: 11.5px; }
+    @media screen and (max-width: 480px) {
+      .tile.tile-4096 {
+        font-size: 15px; } }
+ .tile.tile-140737488355328 .tile-inner {
+    color: #f9f6f2;
+    background: rgb(50 25 0 / 1);
+    box-shadow: 0 0 30px 10px rgba(50, 25, 0, 0.77778), inset 0 0 0 1px rgba(255, 255, 255, 0.33333);
+    font-size: 11.5px; }
+    @media screen and (max-width: 480px) {
+      .tile.tile-4096 {
+        font-size: 15px; } }
+ .tile.tile-281474976710656 .tile-inner {
+    color: #f9f6f2;
+    background: rgb(30 15 0 / 1);
+    box-shadow: 0 0 30px 10px rgba(70, 35, 0, 0.77778), inset 0 0 0 1px rgba(255, 255, 255, 0.33333);
+    font-size: 11.5px; }
+    @media screen and (max-width: 480px) {
+      .tile.tile-4096 {
+        font-size: 15px; } }
 
 @-webkit-keyframes appear {
   0% {
