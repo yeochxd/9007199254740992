@@ -10,11 +10,11 @@ window.requestAnimationFrame(function () {
     this.applyClasses(wrapper, classes);
     inner.classList.add("tile-inner");
     switch (tile.value) {
-    case 36028797018963970:
-      inner.textContent = "36028797018963968";
+    case 2:
+      inner.textContent = "H";
       break;
-    case 72057594037927940:
-      inner.textContent = "72057594037927936";
+    case 4:
+      inner.textContent = "He";
       break;
     case 8:
       inner.textContent = "Li";
