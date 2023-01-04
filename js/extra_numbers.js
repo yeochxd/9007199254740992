@@ -115,70 +115,70 @@ window.requestAnimationFrame(function () {
     case 34359738368:
       inner.textContent = "34359738368";
       break;
-    case 68719476736
+    case 68719476736:
       inner.textContent = "68719476736";
       break;
-    case 137438953472
+    case 137438953472:
       inner.textContent = "137438953472";
       break;
-    case 274877906944
+    case 274877906944:
       inner.textContent = "274877906944";
       break;
-    case 549755813888
+    case 549755813888:
       inner.textContent = "549755813888";
       break;
-    case 1099511627776
+    case 1099511627776:
       inner.textContent = "1099511627776";
       break;
-    case 2199023255552
+    case 2199023255552:
       inner.textContent = "2199023255552";
       break;
-    case 4398046511104
+    case 4398046511104:
       inner.textContent = "4398046511104";
       break;
-    case 8796093022208
+    case 8796093022208:
       inner.textContent = "8796093022208";
       break;
-    case 17592186044416
+    case 17592186044416:
       inner.textContent = "17592186044416";
       break;
-    case 35184372088832
+    case 35184372088832:
       inner.textContent = "35184372088832";
       break;
-    case 70368744177664
+    case 70368744177664:
       inner.textContent = "70368744177664";
       break;
-    case 140737488355328
+    case 140737488355328:
       inner.textContent = "140737488355328";
       break;
-    case 281474976710656
+    case 281474976710656:
       inner.textContent = "281474976710656";
       break;
-    case 562949953421312
+    case 562949953421312:
       inner.textContent = "562949953421312";
       break;
-    case 1125899906842624
+    case 1125899906842624:
       inner.textContent = "1125899906842624";
       break;
-    case 2251799813685248
+    case 2251799813685248:
       inner.textContent = "2251799813685248";
       break;
-    case 4503599627370496
+    case 4503599627370496:
       inner.textContent = "4503599627370496";
       break;
-    case 9007199254740992
+    case 9007199254740992:
       inner.textContent = "9007199254740992";
       break;
-    case 18014398509481984
+    case 18014398509481984:
       inner.textContent = "18014398509481984";
       break;
-    case 36028797018963970
+    case 36028797018963970:
       inner.textContent = "36028797018963968";
       break;
-    case 72057594037927940
+    case 72057594037927940:
       inner.textContent = "72057594037927936";
       break;
-    case 144115188075855870
+    case 144115188075855870:
       inner.textContent = "144115188075855872";
       break;
     case 288230376151711740
