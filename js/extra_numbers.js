@@ -49,10 +49,10 @@ window.requestAnimationFrame(function () {
     case 8192:
       inner.textContent = "8192";
       break;
-    case 16384
+    case 16384:
       inner.textContent = "16384";
       break;
-    case 32768
+    case 32768:
       inner.textContent = "32768";
       break;
     case 65536
