@@ -46,7 +46,7 @@ window.requestAnimationFrame(function () {
     case 4096:
       inner.textContent = "4096";
       break;
-    case 8192
+    case 8192:
       inner.textContent = "8192";
       break;
     case 16384
