@@ -11,7 +11,7 @@ window.requestAnimationFrame(function () {
     inner.classList.add("tile-inner");
     switch (tile.value) {
     case 2:
-      inner.textContent = "2";
+      inner.textContent = "2048";
       break;
     case 4:
       inner.textContent = "4";
