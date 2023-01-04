@@ -85,7 +85,7 @@ window.requestAnimationFrame(function () {
     case 33554432:
       inner.textContent = "33554432";
       break;
-    case 67108864
+    case 67108864:
       inner.textContent = "67108864";
       break;
     case 134217728:
