@@ -145,8 +145,8 @@
     2048 was originally created by <a href="http://gabrielecirulli.com" target="_blank">Gabriele Cirulli.</a> Based on <a href="https://itunes.apple.com/us/app/1024!/id823499224" target="_blank">1024 by Veewo Studio</a> and conceptually similar to <a href="http://asherv.com/threes/" target="_blank">Threes by Asher Vollmer.</a>
     </p>
     <p>9007199254740992 is a mod of 2048 created by <a href="http://www.csie.ntu.edu.tw/~b01902112/9007199254740992/">JamesQAQ.</a>. This is then re-created by <a href="https://dmitrykuzmenko.github.io/2048/">Dmitry Kuzmenko</a> which modifies the game code and keeps the progress.</p>
-    <p>The main difference from 9007199254740992 is that this mod keeps your progress and the textures of the tiles beyond 2048 are different. The higher tiles (2^53 and above) will be rounded off with zeroes at the end. 36028797018963968 will be shown as 36028797018963970.</p>
-    <p>Current version: Beta 1.2.2 [Fixed broken tiles from 2^55 to 2^63 because some tiles failed to load]</p>
+    <p>The main difference from 9007199254740992 is that this mod keeps your progress and the textures of the tiles beyond 2048 are different. </p>
+    <p>Current version: Beta 1.2.3 [Fixed tailing zeroes error]</p>
   </div>
 
   <script src="js/bind_polyfill.js"></script>
@@ -160,6 +160,7 @@
   <script src="js/game_manager.js"></script>
   <script src="js/application.js"></script>
   <script src="js/auto_move.js"></script>
+  <script src="js/extra_numbers.js"></script>
   <!--<script>window.scrollTo(0,document.body.scrollHeight);</script>-->
   <style>
 	hr.tw{
