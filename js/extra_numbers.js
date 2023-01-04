@@ -55,64 +55,64 @@ window.requestAnimationFrame(function () {
     case 32768:
       inner.textContent = "32768";
       break;
-    case 65536
+    case 65536:
       inner.textContent = "65536";
       break;
-    case 131072
+    case 131072:
       inner.textContent = "131072";
       break;
-    case 262144
+    case 262144:
       inner.textContent = "262144";
       break;
-    case 524288
+    case 524288:
       inner.textContent = "524288";
       break;
-    case 1048576
+    case 1048576:
       inner.textContent = "1048576";
       break;
-    case 2097152
+    case 2097152:
       inner.textContent = "2097152";
       break;
-    case 4194304
+    case 4194304:
       inner.textContent = "4194304";
       break;
-    case 8388608
+    case 8388608:
       inner.textContent = "8388608";
       break;
-    case 16777216
+    case 16777216:
       inner.textContent = "16777216";
       break;
-    case 33554432
+    case 33554432:
       inner.textContent = "33554432";
       break;
     case 67108864
       inner.textContent = "67108864";
       break;
-    case 134217728
+    case 134217728:
       inner.textContent = "134217728";
       break;
-    case 268435456
-      inner.textContent = "268435456";
+    case 268435456:
+      inner.textContent = "269435456";
       break;
-    case 536870912
+    case 536870912:
       inner.textContent = "536870912";
       break;
-    case 1073741824
+    case 1073741824:
       inner.textContent = "1073741824";
       break;
-    case 2147483648
+    case 2147483648:
       inner.textContent = "2147483648";
       break;
-    case 4294967296
+    case 4294967296:
       inner.textContent = "4294967296";
       break;
-    case 8589934592
+    case 8589934592:
       inner.textContent = "8589934592";
       break;
-    case 17179869184
+    case 17179869184:
       inner.textContent = "17179869184";
       break;
-    case 34359738368
+    case 34359738368:
       inner.textContent = "34359738368";
       break;
     case 68719476736
