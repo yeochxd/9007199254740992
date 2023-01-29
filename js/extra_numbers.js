@@ -1,12 +1,12 @@
 window.requestAnimationFrame(function () {
-  var game = new GameManager(4, KeyboardInputManager, HTMLActuator, LocalScoreManager);
+  var game = new GameManager(4, KeyboardInputManager, HTMLActuator);
   game.actuator.addTile = function (tile) {
     var self = this;
     var wrapper   = document.createElement("div");
     var inner     = document.createElement("div");
     var position  = tile.previousPosition || { x: tile.x, y: tile.y };
     positionClass = this.positionClass(position);
-    var classes = ["tile", "tile-" + tile.value, positionClass];
+    var classes = ["tile-" + tile.value, positionClass];
     this.applyClasses(wrapper, classes);
     inner.classList.add("tile-inner");
     switch (tile.value) {
