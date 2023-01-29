@@ -158,7 +158,7 @@ GameManager.prototype.move = function (direction) {
 
         // Only one merger per row traversal?
         if (next && next.value === tile.value && !next.mergedFrom) {
-          var merged = new Tile(positions.next, tile.value * 2);
+          var merged = new Tile(positions.next, tile.value + 1);
           merged.mergedFrom = [tile, next];
 
           self.grid.insertTile(merged);
@@ -168,7 +168,7 @@ GameManager.prototype.move = function (direction) {
           tile.updatePosition(positions.next);
 
           // Update the score
-          self.score += merged.value;
+          self.score += 2 ** merged.value;
 
           // The mighty 2048 tile
           if (merged.value === 9007199254740992) self.won = true;
