@@ -10,41 +10,60 @@ window.requestAnimationFrame(function () {
     this.applyClasses(wrapper, classes);
     inner.classList.add("tile-inner");
     switch (tile.value) {
-    case 1:
+    case 2:
       inner.textContent = "H";
       break;
-    case 2:
+    case 4:
       inner.textContent = "He";
       break;
-    case 3:
+    case 8:
       inner.textContent = "Li";
       break;
-    case 4:
+    case 16:
       inner.textContent = "Be";
       break;
-    case 5:
+    case 32:
       inner.textContent = "B";
       break;
-    case 6:
+    case 64:
       inner.textContent = "C";
       break;
-    case 7:
+    case 128:
       inner.textContent = "N";
       break;
-    case 8:
+    case 256:
       inner.textContent = "O";
       break;
-    case 9:
+    case 512:
       inner.textContent = "F";
       break;
-    case 10:
+    case 1024:
       inner.textContent = "Ne";
       break;
-    case 11:
+    case 2048:
       inner.textContent = "Na";
       break;
-    case 12:
+    case 4096:
       inner.textContent = "Mg";
       break;
     }
-   
+    if (tile.previousPosition) {
+      window.requestAnimationFrame(function () {
+        classes[2] = self.positionClass({ x: tile.x, y: tile.y });
+        self.applyClasses(wrapper, classes);
+      });
+    } else if (tile.mergedFrom) {
+      classes.push("tile-merged");
+      this.applyClasses(wrapper, classes);
+      tile.mergedFrom.forEach(function (merged) {
+        self.addTile(merged);
+      });
+    } else {
+      classes.push("tile-new");
+      this.applyClasses(wrapper, classes);
+    }
+    wrapper.appendChild(inner);
+    this.tileContainer.appendChild(wrapper);
+    };
+    game.restart();
+});
