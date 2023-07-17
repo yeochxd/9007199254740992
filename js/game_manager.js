@@ -72,7 +72,7 @@ GameManager.prototype.addStartTiles = function () {
 // Adds a tile in a random position
 GameManager.prototype.addRandomTile = function () {
   if (this.grid.cellsAvailable()) {
-    var value = Math.random() < 0.9 ? 1 : 2;
+    var value = Math.random() < 0.9 ? 2 : 4;
     var tile = new Tile(this.grid.randomAvailableCell(), value);
 
     this.grid.insertTile(tile);
@@ -158,7 +158,7 @@ GameManager.prototype.move = function (direction) {
 
         // Only one merger per row traversal?
         if (next && next.value === tile.value && !next.mergedFrom) {
-          var merged = new Tile(positions.next, tile.value + 1);
+          var merged = new Tile(positions.next, tile.value * 2);
           merged.mergedFrom = [tile, next];
 
           self.grid.insertTile(merged);
@@ -178,6 +178,22 @@ GameManager.prototype.move = function (direction) {
 
         if (!self.positionsEqual(cell, tile)) {
           moved = true; // The tile moved from its original cell!
+
+           //notation
+  function notation(number) {
+    number = Number(number)
+    if (number >= 1e18) {
+      return (Math.floor(number / 1e16) / 100).toString() + 'Qi'
+    } else if (number >= 1e15) {
+      return (Math.floor(number / 1e13) / 100).toString() + 'Qa'
+    } else if (number >= 1e12) {
+      return (Math.floor(number / 1e10) / 100).toString() + 'T'
+    } else if (number >= 1e9) {
+      return (Math.floor(number / 1e7) / 100).toString() + 'B'
+    }
+    return number.toString()
+  }
+  //
         }
       }
     });
