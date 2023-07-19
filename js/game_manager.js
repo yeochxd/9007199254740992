@@ -178,22 +178,6 @@ GameManager.prototype.move = function (direction) {
 
         if (!self.positionsEqual(cell, tile)) {
           moved = true; // The tile moved from its original cell!
-
-           //notation
-  function notation(number) {
-    number = Number(number)
-    if (number >= 1e18) {
-      return (Math.floor(number / 1e16) / 100).toString() + 'Qi'
-    } else if (number >= 1e15) {
-      return (Math.floor(number / 1e13) / 100).toString() + 'Qa'
-    } else if (number >= 1e12) {
-      return (Math.floor(number / 1e10) / 100).toString() + 'T'
-    } else if (number >= 1e9) {
-      return (Math.floor(number / 1e7) / 100).toString() + 'B'
-    }
-    return number.toString()
-  }
-  //
         }
       }
     });
